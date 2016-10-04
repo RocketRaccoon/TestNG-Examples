@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Sample">
+    <test name="Main Test">
+        <classes>
+            <class name="RunTestSubSequence"/>
+        </classes>
+    </test>
+    <test name="SubSet Test">
+        <groups>
+            <run>
+                <include name="Begins_from_c"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="RunTestSubSequence"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,18 @@
+group 'testngex'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    compile "org.testng:testng:6.9.10"
+}
+
+test {
+    useTestNG()
+}

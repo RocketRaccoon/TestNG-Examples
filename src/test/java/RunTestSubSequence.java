@@ -2,7 +2,7 @@ import org.testng.ITestContext;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-/**
+    /**
      * Created by andrey.smirnov on 04.10.2016.
      * http://stackoverflow.com/questions/39684367/repeating-of-tests-subsequence-using-testng/39695279#comment66708185_39695279
      */

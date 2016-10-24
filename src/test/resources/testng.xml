@@ -13,7 +13,12 @@
             </run>
         </groups>
         <classes>
-            <class name="RunTestSubSequence"/>
+            <class name="RunTestSubSequence">
+                <methods>
+                    <parameter name="" value=""
+                    <include name=""
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>

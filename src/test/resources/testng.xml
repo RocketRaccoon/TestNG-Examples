@@ -14,10 +14,6 @@
         </groups>
         <classes>
             <class name="RunTestSubSequence">
-                <methods>
-                    <parameter name="" value=""
-                    <include name=""
-                </methods>
             </class>
         </classes>
     </test>

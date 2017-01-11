@@ -1,4 +1,11 @@
+import org.testng.ITestContext;
+import org.testng.SkipException;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.Test;
+
+import java.util.Arrays;
+import java.util.Objects;
 
 import static org.testng.Assert.assertTrue;
 
@@ -9,21 +16,23 @@ import static org.testng.Assert.assertTrue;
 public class IgnoreFailureOnASingleTest {
 
     int a = 0;
-    int b = 0;
 
     @Test(retryAnalyzer = RetryAnalyzer.class)
     public void a() {
         a++;
-        System.out.println(a);
-        if (a < 4)
+        System.out.println("a" + a);
+        if (a < 3)
             assertTrue(false);
     }
 
     @Test(retryAnalyzer = RetryAnalyzer.class)
     public void b() {
-        b++;
-        System.out.println(a);
-        if (b < 3)
-            assertTrue(false);
+        System.out.println("b");
     }
+
+    @Test()
+    public void c() {
+        System.out.println("c");
+    }
+
 }

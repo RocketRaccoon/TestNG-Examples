@@ -9,12 +9,21 @@ import static org.testng.Assert.assertTrue;
 public class IgnoreFailureOnASingleTest {
 
     int a = 0;
+    int b = 0;
 
-    @Test(retryAnalyzer = RetryAnalyzer.class, skipFailedInvocations = true)
+    @Test(retryAnalyzer = RetryAnalyzer.class)
     public void a() {
         a++;
         System.out.println(a);
         if (a < 4)
+            assertTrue(false);
+    }
+
+    @Test(retryAnalyzer = RetryAnalyzer.class)
+    public void b() {
+        b++;
+        System.out.println(a);
+        if (b < 3)
             assertTrue(false);
     }
 }

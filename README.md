@@ -5,3 +5,4 @@ TestNG Examples
 - XML from XLSX generation
 - Parsing test context before test
 - Building test subsequences
+- Dependency injection

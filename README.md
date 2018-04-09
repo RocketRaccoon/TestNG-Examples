@@ -6,3 +6,4 @@ TestNG Examples
 - Parsing test context before test
 - Building test subsequences
 - Dependency injection
+- Custom data providers
